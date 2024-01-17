@@ -44,19 +44,49 @@ nav a {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
-    /* border: 5px solid black; */
 }
 
 .banner-title {
-    color:#131313;
+    color: #131313;
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
 }
-
+.banner  img {
+    width: 100%;
+    margin-top: 20px;
+}
 /* Shared styles */
-/* .btn-primary{
+.btn-primary {
+    border-radius: 8px;
+    color: #FFF;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    font-size: 1.252rem;
+    font-weight: 600;
+}
 
-} */
+/* Responsive styles */
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    
+}
+/* Tablet devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
